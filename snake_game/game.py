@@ -2,7 +2,7 @@ import pygame
 import time
 from pygame.locals import *
 from constants import *
-from aaple import Apple
+from snake_game.aaple import Apple
 from snake import Snake
 
 
@@ -43,7 +43,7 @@ class Game:
         pygame.mixer.music.pause()
 
     def play_background_music(self):
-        pygame.mixer.music.load('resources/bg_music_1.mp3')
+        pygame.mixer.music.load('../resources/bg_music_1.mp3')
         pygame.mixer.music.play()
 
     def play_sound(self, sound):
@@ -51,7 +51,7 @@ class Game:
         pygame.mixer.Sound.play(sound)
 
     def render_background(self):
-        bg = pygame.image.load('resources/background.jpg')
+        bg = pygame.image.load('../resources/background.jpg')
         self.surface.blit(bg, (0, 0))
 
     def play(self):
