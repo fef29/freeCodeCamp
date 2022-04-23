@@ -43,15 +43,15 @@ class Game:
         pygame.mixer.music.pause()
 
     def play_background_music(self):
-        pygame.mixer.music.load('../resources/bg_music_1.mp3')
+        pygame.mixer.music.load('snake_game/resources/bg_music_1.mp3')
         pygame.mixer.music.play()
 
     def play_sound(self, sound):
-        sound = pygame.mixer.Sound(f'resources/{sound}.mp3')
+        sound = pygame.mixer.Sound(f'snake_game/resources/{sound}.mp3')
         pygame.mixer.Sound.play(sound)
 
     def render_background(self):
-        bg = pygame.image.load('../resources/background.jpg')
+        bg = pygame.image.load('snake_game/resources/background.jpg')
         self.surface.blit(bg, (0, 0))
 
     def play(self):
